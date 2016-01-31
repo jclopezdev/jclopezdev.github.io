@@ -2,4 +2,4 @@
 Portfolio
 
 ## Twitter:
-[https://www.twitter.com/jcarloslopezl]twitter.com/jcarloslopezl.
+[https://www.twitter.com/jcarloslopezl](twitter.com/jcarloslopezl).
