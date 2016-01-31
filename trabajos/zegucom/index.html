@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="webApp">
+<head lang="es">  
+	<base href="/index.html">
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Zegucom Computo</title>
+  	<meta name="title" content="Zegucom Computo" />	
+	<meta name="viewport" content="width=device-width , maximum-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />		
+	<link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+	<header class="header">		
+		<div class="header-mobile">
+			<button id="btnNav" class="header-btn-nav">
+				<i class="fa fa-bars"></i>
+			</button>	
+
+			<div class="header-logo">
+				<a href="/">					
+ 					<img src="public/img/logos/logo-mobile.jpg" alt="Logo Zegucom Computo">
+				</a>
+			</div>
+
+			<div class="header-buttons">				
+				<button class="header-btn-sesion">
+					<i class="fa fa-sign-in"></i>
+				</button>
+
+				<button class="header-btn-panel">
+					<i class="fa fa-user"></i>
+				</button>
+
+				<button class="header-btn-cart">
+					<i class="fa fa-cart-arrow-down"></i>
+				</button>
+			</div>
+		</div>	
+
+		<div class="header-tablet">
+			<nav class="header-nav">
+				<ul id="navBar" class="header-nav-list">
+					<li class="nav-products no-mobile"><a href="#">Productos</a></li>
+					<li class="no-mobile"><a href="/ensamblar">Armar Computadora</a></li>
+					<li><a href="/remates">Remates</a></li>
+					<li><a href="/marcas">Marcas</a></li>					
+					<li class="no-desktop"><a href="/panel">Panel</a></li>
+					<li><a href="/contacto">Contacto</a></li>
+				</ul>
+			</nav>
+
+			<!-- Busqueda -->
+			<div class="busqueda">
+				<form class="form-search cf" method="get" action="/search" autocomplete="off">
+			        <input type="text" name="q" placeholder="Ingresa producto, modelo o marca que buscas." required>
+			        
+			        	<button type="submit">Buscar</button>
+			        	<span class="fa add-on"><i class="icon-key"></i></span>
+					
+					 
+			    </form>
+			</div>
+		</div>
+	</header>	
+
+	<article class="content">		
+
+		<!-- Mostrar secciones -->			
+		<section ng-view></section>
+
+	</article>
+
+	<footer class="footer">
+		<p class="footer-text">
+			Copyright © 2012 Dicotech Mayorista De Tecnologia, S.A. de C.V. 
+			Todos los derechos reservados, México.
+		</p>
+	</footer>
+
+</body>
+<script src="public/js/vendor.js"></script>
+<script src="public/js/app.js"></script>
+<script>
+	(function() {
+		var btnNav = document.getElementById('btnNav');
+		var navBar = document.getElementById('navBar');
+
+		btnNav.addEventListener('click', onClickNav);
+
+		function onClickNav(){
+			navBar.classList.toggle('header-nav-list--show');
+		}
+
+	}());
+</script>
+
+</html>

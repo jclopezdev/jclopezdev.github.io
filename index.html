@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Portafolio.la</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, maximum-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="static/css/normalize.css">
+        <link rel="stylesheet" href="static/css/estilos.css">
+    </head>
+    <body>
+        <header id="yo" class="Header">
+            <button class="Header-button is-active icon-showMenu" id="showMenu"></button>
+            <button class="Header-button icon-hideMenu" id="hideMenu"></button>
+            <nav class="MainMenu" id="menu">
+                <ul class="MainMenu-list">
+                    <li class="MainMenu-item">
+                        <a class="MainMenu-link" href="#yo">Yo</a>
+                    </li>
+                    <li class="MainMenu-item">
+                        <a class="MainMenu-link" href="#perfil">Perfil</a>
+                    </li>
+                    <li class="MainMenu-item">
+                        <a class="MainMenu-link" href="#trabajo">Trabajo</a>
+                    </li>
+                    <li class="MainMenu-item">
+                        <a class="MainMenu-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <figure class="Header-imageContainer">
+                <img src="static/images/avatar.jpg" alt="Imagen personal" class="Header-image"/>
+                <figcaption class="Header-imageDescription">
+                    <p class="Header-name">Juan Carlos López</p>
+                </figcaption>
+            </figure>
+            <a href="http://twitter.com/jcarloslopezl/" target="_blank" class="Header-link">@jcarloslopezl</a>
+        </header>
+        <section id="perfil" class="Profile">
+            <div class="u-containerDefault">
+                <h2 class="Profile-title u-title">Mi perfil</h2>
+                <p class="Profile-description">
+                    <strong>Hola!</strong> si <span class="Profile-span">llegaste</span> hasta aqui puedes ver mi portafolio y <em>contactarme</em>
+                </p>
+                <a class="Profile-link twitter icon-twitter" href="http://twitter.com/jcarloslopezl/" target="_blank">@jcarloslopezl</a>
+                <a class="Profile-link facebook icon-facebook" href="http://facebook.com/jcarloslopezl/" target="_blank">jcarloslopezl</a>
+                <a class="Profile-link github icon-github" href="http://github.com/jcarloslopezl/" target="_blank">jcarloslopezl</a>
+            </div>
+        </section>
+        <section id="trabajo" class="Work">
+            <div class="u-containerDefault">
+                <h2 class="Work-title u-title">Mi trabajo</h2>
+            </div>
+            <div class="Work-container u-containerDefault">
+                <article class="Work-item">
+                    <div class="Flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <figure class="Work-imageContainer">
+                                    <img class="Work-image" src="static/images/trabajos/seproinmex.jpg" width="256" height="150"  alt="Seproinmex">
+                                </figure>
+                            </div>
+                            <div class="back">
+                                <a href="http://www.seproinmex.mx" target="_BLANK">www.seproinmex.mx</a>
+                            </div>  
+                        </div>
+                    </div> 
+                    <figcaption class="Work-description">Seproinmex</figcaption>
+                </article>
+                 <article class="Work-item">
+                    <div class="Flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                           <div class="front">
+                                <figure class="Work-imageContainer">
+                                    <img class="Work-image" src="static/images/trabajos/lightsound.jpg" alt="Lightsound">
+                                </figure>
+                            </div>
+                            <div class="back">
+                                <a href="http://www.lightsound.com.mx" target="_BLANK">www.lightsound.com.mx</a>
+                            </div>  
+                       </div> 
+                    </div>   
+                       <figcaption class="Work-description">Lightsound</figcaption>
+                </article>
+                <article class="Work-item">
+                    <div class="Flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <figure class="Work-imageContainer">
+                                    <img class="Work-image" src="static/images/trabajos/trilatero.jpg" alt="Trilatero">
+                                </figure>
+                            </div>
+                            <div class="back">
+                                <a href="http://www.trilatero.net" target="_BLANK">www.trilatero.net</a>
+                            </div>  
+                        </div> 
+                    </div> 
+                    <figcaption class="Work-description">Trilatero</figcaption>
+                </article>
+               <article class="Work-item">
+                    <div class="Flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <figure class="Work-imageContainer">
+                                    <img class="Work-image" src="static/images/trabajos/hotelplazagalindo.jpg" alt="Hotel Plaza Galindo">
+                                </figure>
+                            </div>
+                            <div class="back">
+                                <a href="http://www.hotelplazagalindo.com" target="_BLANK">www.hotelplazagalindo.com</a>
+                            </div>  
+                        </div> 
+                    </div> 
+                    <figcaption class="Work-description">Hotel Plaza Galindo</figcaption>
+                </article>
+                <article class="Work-item">
+                    <div class="Flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <figure class="Work-imageContainer">
+                                    <img class="Work-image" src="static/images/trabajos/adateck.jpg" alt="Adateck">
+                                </figure>
+                            </div>
+                            <div class="back">
+                                <a href="http://www.adataeck.com.mx" target="_BLANK">www.adateck.com.mx</a>
+                            </div>  
+                        </div> 
+                    </div> 
+                    <figcaption class="Work-description">Adateck</figcaption>
+                </article>
+                <article class="Work-item">
+                    <div class="Flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <figure class="Work-imageContainer">
+                                    <img class="Work-image" src="static/images/trabajos/paintzoom.jpg" alt="Paintzoom">
+                                </figure>
+                            </div>
+                            <div class="back">
+                                <a href="http://www.paintzoom.com.mx" target="_BLANK">www.paintzoom.com.mx</a>
+                            </div>  
+                        </div> 
+                    </div> 
+                    <figcaption class="Work-description">Paintzoom</figcaption>
+                </article>              
+               
+            </div> 
+        </section>
+        <footer id="contacto" class="Footer">
+            <div class="Footer-left">
+                <h3 class="Footer-title">Contacto</h3>
+                <p class="Footer-description">Si tienes una sugerencia o quieres trabajar conmigo ponte en contacto con este formulario</p>
+            </div>
+            <form class="Footer-form">
+                <input class="Footer-formInput"  type="text" placeholder="Nombre"/>
+                <input class="Footer-formInput" type="email" placeholder="Email"/>
+                <textarea class="Footer-textarea" placeholder="Motivo"></textarea>
+                <button type="submit" class="Footer-button"> Contactarme </button>
+            </form>
+        </footer>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>        
+        <script src="static/js/hammer.min.js"></script>
+        <script src="static/js/retina.min.js"></script>
+        <script>
+            $(function(){
+
+                if(window.matchMedia("(max-width:768px)").matches){
+                    
+                    var $buttonShowMenu = document.getElementById('showMenu');
+                    var $buttonHideMenu = document.getElementById('hideMenu');
+                    var $menu = document.getElementById('menu');
+
+                    var $body = document.querySelector('body');
+
+                    var body = new Hammer($body);
+
+                    var showMenu = function(){
+                        $buttonShowMenu.classList.remove('is-active');
+                        $buttonHideMenu.classList.add('is-active');
+                        $menu.classList.add('is-active');           
+                    };
+
+                    var hideMenu = function(){
+                        $buttonShowMenu.classList.add('is-active');
+                        $buttonHideMenu.classList.remove('is-active');
+                        $menu.classList.remove('is-active');
+                    };
+
+                    $buttonShowMenu.addEventListener("click", showMenu);
+                    $buttonHideMenu.addEventListener("click", hideMenu);
+
+                    body.on('panright', showMenu);
+                    body.on('panleft', hideMenu);
+
+                }else{
+                    console.log("Eres un laptop");
+                }
+            });
+        </script>
+    </body>
+</html>

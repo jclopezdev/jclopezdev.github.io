@@ -1,0 +1,261 @@
+@import "nib"
+@import "normalize.styl"
+@import "fonts.styl"
+
+gris_oscuro = #333333
+gris_claro = #818181
+gris_background = #F0F0F0 
+rojo = #BD255B
+a
+	text-decoration none
+body
+	font-size 16px	
+figure
+	margin 0
+img
+	vertical-align top	
+ul
+	margin 0
+	padding 0	
+.action
+	color white
+	margin-right .5em
+	&:last-child
+		margin-right 0
+	&.gray
+		color gris_oscuro	
+.actions
+	background rgba(black, .3)
+	font-size 1.2em
+	position absolute	
+	bottom 0
+	left 0
+	right 0
+.author
+	color gris_claro	
+.bordertest
+	border 1px solid red	
+.button-menu
+	color gris_oscuro
+	left .5em
+	margin-top -10px
+	position absolute
+	top 50%
+.center-block
+	margin 0 auto	
+.center-text
+	text-align center	
+.container
+	font-family 'Varela Round', sans-serif
+	font-size 0
+	padding 1.4rem	
+	text-align center
+.border-bottom	
+	border-bottom 1px solid gris_claro	
+.left
+	float left	
+.name
+	color gris_oscuro		
+.menu
+	display none	
+.padding
+	padding 1em
+.padding-tb
+	padding 1em 0
+.progress
+	margin 1em 0
+	position relative
+	.min		
+	.max
+		font-size .8em
+		position absolute
+		top -5px
+	.min		
+		left 0
+	.max
+		right 0				
+	.total
+		background gris_claro
+		border-radius 5px
+		height 5px		
+		margin 0 auto
+		width 75%
+	.state
+		border-radius 5px
+		height 5px
+		background rojo	
+		position relative
+		width 30%
+		animation 10s state infinite linear
+	.circle
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px
+		animation 1s circle infinite
+@keyframes state
+	0%
+		width 0			
+	100%
+		width 100%
+		opacity 0
+@keyframes circle
+	0%
+		transform scale(1)		
+	100%
+		transform scale(2)	
+.relative
+	position relative	
+.right 
+	float right	
+.right-text
+	text-align right	
+	
+.header
+	height 3.5em
+			
+	.title
+		font-size 1.1em
+		text-align center	
+		margin 0
+		line-height 3.5em
+.song
+	display inline-block
+	font-size 1rem
+	margin-bottom 1em
+	margin-right 1em
+	text-align left
+	width 128px
+	&:nth-child(even)
+		margin-right 0	
+	p
+		margin .5em 0
+			
+.playing
+	
+	&.small
+		width 20em
+		margin 0 auto
+.round		
+	border-radius 50%
+	overflow hidden
+.wrap
+	width 1000px		
+.input
+	border 1px solid gris_claro
+	border-radius 5px
+	height 2.2em
+	outline 0
+	padding 0 1em 0 2em
+.search
+	margin-right 1em	
+.search-icon
+	position absolute
+	left .5em
+	top .7em	
+	color gris_claro
+.close-icon
+	position absolute
+	top .4em
+	color gris_claro
+	right .5em
+	font-size 1.2em
+.playlist	
+		border-left 1px solid gris_claro
+		display none
+		padding 0 2em
+		width 22em
+		.list
+			list-style none
+		.item
+			padding 1em 0			
+		.action
+			font-size .8em
+			color gris_claro
+	.isotipo
+		width 122px
+		
+	.logo
+		background white		
+		display none
+		overflow hidden
+		padding 1.3em 0
+	.avatar
+		display inline-block
+		height 38px			
+		vertical-align middle
+		width 38px
+	.username
+		color gris_claro
+		display inline-block
+		line-height 1em
+		margin-left .5em		
+		top 9px
+		vertical-align middle
+		width auto
+		&:after
+			border-left 7px solid transparent
+			border-right 7px solid transparent
+			border-top 9px solid gris_claro
+			content ""
+			display inline-block
+			margin-left .4em
+.user
+	vertical-align middle	
+
+@media screen and (min-width:480px)	
+	.song
+		&:nth-child(even)
+			margin-right 1em
+	.image
+		img
+			height auto
+			width 100%
+	.playing
+		&.medium
+			width auto
+
+@media screen and (min-width:1000px)
+	body
+		background gris_background
+	.button-menu
+		display none
+	.playing		
+		padding-top 1.3em
+		&.large
+			margin 0 auto
+			width 62.5em
+			overflow hidden	
+	.header
+		border none
+		height auto
+		.title	
+			display none
+	.logo
+	.playlist
+		display block
+	.menu
+		background gris_background
+		border-top 1px solid gris_claro
+		display block
+		overflow hidden
+		.item
+			float left
+			list-style none			
+			a
+				color gris_oscuro
+				cursor pointer
+				display block
+				padding 1em
+				text-transform uppercase
+				border-top 5px solid transparent
+				&:hover
+					border-top 5px solid gris_claro
+	.music
+		float left
+		width 32.5em
+		.description		
+			display none	
