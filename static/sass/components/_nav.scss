@@ -1,0 +1,45 @@
+.MainMenu{  
+  background: #1E1E1E;
+  box-shadow: 0px 2px 4px #000;
+  text-align: center;
+  height: 3.75em;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+
+  .MainMenu-list{
+    margin: 0;
+    padding: 0;
+  }
+
+  .MainMenu-item
+  display inline-block
+
+  .MainMenu-link{
+    color: #00DBFF;
+    text-decoration: none;
+    line-height: 3.75em;
+    margin: 0 .5em;
+  }
+}
+
+@include breakpoint('tablet'){
+  
+  .MainMenu{
+    background: red;
+    height: auto;
+    left: -200px;
+    width: 200px;
+    transition: .2s;
+    
+    &.is-active{
+        left: 0;
+    } 
+    
+    &-item{
+      display: block;
+    }
+  }  
+}

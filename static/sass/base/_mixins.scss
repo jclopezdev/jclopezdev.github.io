@@ -1,0 +1,40 @@
+// Mixins
+
+@mixin border-radius($radius) {
+          border-radius: $radius;
+      -ms-border-radius: $radius;
+     -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin flexbox() {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexboxBetween(){
+  -moz-flex-flow: row wrap;
+  -moz-justify-content: space-between;
+  -ms-flex-direction: row;
+  -ms-flex-pack: start;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+@mixin flex($values) {
+  -moz-box-flex:  $values;
+  -ms-flex:  $values;
+  -webkit-box-flex: $values;
+  -webkit-flex:  $values;
+  flex:  $values;
+}

@@ -1,0 +1,25 @@
+.Work{
+  margin-top: 2em;
+  text-align: center;
+  
+  &-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .Work-item{
+    display: inline-block;
+    margin-bottom: 1.8em;
+  }
+
+  .Work-imageContainer{
+    margin: 0;
+  }
+
+  .Work-description{
+    font-size: 1.1em;
+    color: #515151;
+    font-style: italic;
+  }
+}

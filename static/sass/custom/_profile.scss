@@ -1,0 +1,31 @@
+.Profile{
+  text-align: center;
+  padding: 0 1em;
+}
+
+.Profile-link{
+  background: orange;
+  border-radius: 2em;
+  color: white;
+  margin-right: .5em;
+  padding: .5em 1em;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1em;
+    
+  &.twitter{
+      background: #55ACEE;
+  }   
+    
+  &.facebook{
+    background: #4862A3;
+  }    
+    
+  &.github{
+    background: #829AA8;
+  }
+    
+  &:before{
+    margin-right: .5em;
+  }
+}      

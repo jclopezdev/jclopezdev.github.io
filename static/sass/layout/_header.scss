@@ -1,0 +1,64 @@
+.Header{
+  margin-top: 3.75em;
+  background-image: url('../images/portada.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 1.2em 0;
+  
+  &-button{
+    background: white;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    position: fixed;
+    right: 1em;
+    text-align: center;
+    top: .6em;
+    width: 40px;
+    z-index: 3;
+    
+    &.is-active{
+      display: block;
+    }
+  }
+}
+
+.Header-imageContainer{
+  margin: 0;
+} 
+
+.Header-image{
+  border: 5px solid white;
+  border-radius: 50%;
+} 
+
+.Header-name, .Header-link{
+  color: white;
+}  
+
+.Header-link{
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+} 
+
+.Header-name{
+  font-size: 2.2em;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #000;
+}
+        
+@include breakpoint('tablet'){
+
+  .Header{
+    margin-top: 0;
+  }
+
+}  

@@ -1,0 +1,66 @@
+.Footer{
+  background-color: #0EC3DE;
+  background-repeat: no-repeat;
+  background-position: center;
+  image: url('../images/footer.jpg', w=1200px, h=350px);
+  padding: 2em 0;
+  text-align: center;
+
+  .Footer-form{
+    text-align: center;
+    display: inline-block;
+  }
+
+  .Footer-left{
+    display: inline-block;
+    max-width: 32em;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .Footer-title{
+    color: white;
+  }
+
+  .Footer-formInput, .Footer-textarea{
+    background: white;
+    border: none;
+    display: block;
+    border-radius: 1em;
+    padding: .5em;
+    margin: 0 auto 1em;
+    outline: 0;
+  }
+
+  .Footer-textarea{
+    resize: none;
+  }
+
+  .Footer-button{
+    background: orange;
+    border-radius: 1em;
+    border: none;
+    color: white;
+    padding: .5em 1em;
+  }
+
+}
+
+@include breakpoint('tablet'){
+
+  .Footer{
+
+      &-form{
+        display: block;
+      }
+
+      &-formInput{
+
+      }
+
+      &-textarea{
+        width: 90%;
+        box-sizing: border-box;
+      }
+    }
+}
