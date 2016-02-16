@@ -32,7 +32,7 @@ gulp.task('server', function(){
 // Build css
 gulp.task('build:css', function () {
  gulp.src(config.styles.watch)
-   .pipe(sass({outputStyle: 'expanded'})) // compressed, expanded
+   .pipe(sass({outputStyle: 'compressed'})) // compressed, expanded
    .pipe(gulp.dest(config.styles.output));
 });
 
