@@ -1,24 +1,24 @@
-.MainMenu{  
+.MainNav{    
   border: 1px solid red;
-  background: #1E1E1E;
   box-shadow: 0px 2px 4px #000;
-  text-align: center;
   height: 3.75em;
-  position: fixed;
   left: 0;
+  position: fixed;
   right: 0;
+  text-align: center;
   top: 0;
+  width: 100%;
   z-index: 3;
 
-  .MainMenu-list{
+  .MainNav-list{
     margin: 0;
     padding: 0;
   }
 
-  .MainMenu-item
+  .MainNav-item
   display inline-block
 
-  .MainMenu-link{
+  .MainNav-link{
     color: #00DBFF;
     text-decoration: none;
     line-height: 3.75em;
@@ -28,8 +28,7 @@
 
 @include breakpoint('tablet'){
   
-  .MainMenu{
-    background: red;
+  .MainNav{
     height: auto;
     left: -200px;
     width: 200px;
