@@ -9,21 +9,21 @@
     </head>
     <body>
         <header id="yo" class="Header">
-            <button class="Header-button is-active icon-showMenu" id="showMenu"></button>
-            <button class="Header-button icon-hideMenu" id="hideMenu"></button>
-            <nav class="MainMenu" id="menu">
-                <ul class="MainMenu-list">
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#yo">Yo</a>
+            <button class="Header-button is-active icon-showNav" id="showNav"></button>
+            <button class="Header-button icon-hideNav" id="hideNav"></button>
+            <nav class="MainNav" id="nav">
+                <ul class="MainNav-list">
+                    <li class="MainNav-item">
+                        <a class="MainNav-link" href="#yo">Yo</a>
                     </li>
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#perfil">Perfil</a>
+                    <li class="MainNav-item">
+                        <a class="MainNav-link" href="#perfil">Perfil</a>
                     </li>
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#trabajo">Trabajo</a>
+                    <li class="MainNav-item">
+                        <a class="MainNav-link" href="#trabajo">Trabajo</a>
                     </li>
-                    <li class="MainMenu-item">
-                        <a class="MainMenu-link" href="#contacto">Contacto</a>
+                    <li class="MainNav-item">
+                        <a class="MainNav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -164,34 +164,34 @@
 
                 if(window.matchMedia("(max-width:768px)").matches){
                     
-                    var $buttonShowMenu = document.getElementById('showMenu');
-                    var $buttonHideMenu = document.getElementById('hideMenu');
-                    var $menu = document.getElementById('menu');
+                    var $buttonShowNav = document.getElementById('showNav');
+                    var $buttonHideNav = document.getElementById('hideNav');
+                    var $nav = document.getElementById('nav');
 
                     var $body = document.querySelector('body');
 
                     var body = new Hammer($body);
 
-                    var showMenu = function(){
-                        $buttonShowMenu.classList.remove('is-active');
-                        $buttonHideMenu.classList.add('is-active');
-                        $menu.classList.add('is-active');           
+                    var showNav = function(){
+                        $buttonShowNav.classList.remove('is-active');
+                        $buttonHideNav.classList.add('is-active');
+                        $nav.classList.add('is-active');           
                     };
 
-                    var hideMenu = function(){
-                        $buttonShowMenu.classList.add('is-active');
-                        $buttonHideMenu.classList.remove('is-active');
-                        $menu.classList.remove('is-active');
+                    var hideNav = function(){
+                        $buttonShowNav.classList.add('is-active');
+                        $buttonHideNav.classList.remove('is-active');
+                        $nav.classList.remove('is-active');
                     };
 
-                    $buttonShowMenu.addEventListener("click", showMenu);
-                    $buttonHideMenu.addEventListener("click", hideMenu);
+                    $buttonShowNav.addEventListener("click", showNav);
+                    $buttonHideNav.addEventListener("click", hideNav);
 
-                    body.on('panright', showMenu);
-                    body.on('panleft', hideMenu);
+                    body.on('panright', showNav);
+                    body.on('panleft', hideNav);
 
                 }else{
-                    console.log("Eres un laptop");
+                    // Laptop
                 }
             });
         </script>
