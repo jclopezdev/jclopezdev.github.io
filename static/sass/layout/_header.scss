@@ -1,11 +1,12 @@
 .Header{
-  margin-top: 3.75em;
-  background-image: url('../images/portada.jpg');
-  background-repeat: no-repeat;
+  background-image: url('../images/background-cover.jpg');
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
+  height: 100vh;
+  margin-top: 3.75em;
   padding: 1.2em 0;
+  text-align: center;
   
   &-button{
     background: white;
@@ -59,6 +60,10 @@
 
   .Header{
     margin-top: 0;
+
+    .MainNav{
+      display: none;
+    }
   }
 
 }  

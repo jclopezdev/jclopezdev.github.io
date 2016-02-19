@@ -1,39 +1,15 @@
-.MainNav{    
-  border: 1px solid red;
-  box-shadow: 0px 2px 4px #000;
-  height: 3.75em;
-  left: 0;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  z-index: 3;
+.MainNav{     
+    background-color: transparent;
+    box-shadow: 0px 2px 1px #000;
+    height: 3.75em;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 3;
 
-  .MainNav-list{
-    margin: 0;
-    padding: 0;
-  }
-
-  .MainNav-item
-  display inline-block
-
-  .MainNav-link{
-    color: #00DBFF;
-    text-decoration: none;
-    line-height: 3.75em;
-    margin: 0 .5em;
-  }
-}
-
-@include breakpoint('tablet'){
-  
-  .MainNav{
-    height: auto;
-    left: -200px;
-    width: 200px;
-    transition: .2s;
-    
     &.is-active{
         left: 0;
     } 
@@ -41,5 +17,43 @@
     &-item{
       display: block;
     }
-  }  
+
+    .MainNav-list{      
+      margin: 0;
+      padding: 0;    
+
+      .MainNav-item{        
+        display: inline-block;
+
+        .MainNav-link{
+          color: #00DBFF;
+          text-decoration: none;
+          line-height: 3.75em;
+          margin: 0 .5em;
+        }
+      }
+    }
+}  
+
+@include breakpoint('tablet'){
+  
+  .MainNav{      
+   display: none;
+
+    .MainNav-list{
+      margin: 0;
+      padding: 0;
+    }
+
+    .MainNav-item
+    display inline-block
+
+    .MainNav-link{
+      color: #00DBFF;
+      text-decoration: none;
+      line-height: 3.75em;
+      margin: 0 .5em;
+    }
+  }
+ 
 }
