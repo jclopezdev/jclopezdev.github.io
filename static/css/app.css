@@ -64,8 +64,25 @@ table {
   color: white;
 }
 
-#home .line {
-  background-color: #00cfff;
+#home .info .container .home-name {
+  -webkit-text-shadow: 1px 1px 2px #000;
+  -ms-text-shadow: 1px 1px 2px #000;
+  -moz-text-shadow: 1px 1px 2px #000;
+  -o-text-shadow: 1px 1px 2px #000;
+  text-shadow: 1px 1px 2px #000;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin: 0.2em auto;
+  text-decoration: none;
+}
+
+#home .info .container .home-twitter {
+  font-size: 1.5em;
+}
+
+#home .info .container .logo {
+  border: 3px solid white;
+  border-radius: 50%;
 }
 
 #nav-sticky-wrapper.is-sticky #nav {
@@ -107,12 +124,16 @@ table {
   color: #ff6a00;
 }
 
+a {
+  text-decoration: none;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
-  font-family: 'Arial', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0 auto;
   background-color: #fff;
@@ -188,15 +209,6 @@ body {
 
 .clearfix {
   display: block;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-size: 16px;
-  margin: 0;
 }
 
 .block {
