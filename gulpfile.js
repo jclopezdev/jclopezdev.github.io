@@ -48,6 +48,20 @@ gulp.task('build:css', function () {
    .pipe(gulp.dest(config.styles.output));
 });
 
+// Build Js
+gulp.task('build:vendor', function() {
+  gulp.src([
+           'bower_components/jquery/dist/jquery.js',
+           'static/js/vendor/jquery.backstretch.min.js',
+           'static/js/vendor/jquery.sticky.js',
+           'static/js/vendor/jquery.scrollto.min.js',
+           'static/js/vendor/jquery.nav.js'
+      ])
+    .pipe(concat('vendor.js', {newLine: ';'}))
+    .pipe(uglify())
+    .pipe(gulp.dest(config.scripts.output));
+});
+
 // Images Optimization
 gulp.task('images', function() {
   gulp.src(config.images.watch)
@@ -67,7 +81,7 @@ gulp.task('watch', function() {
 });
 
 // Build Task
-gulp.task('build', ['build:css']);
+gulp.task('build', ['build:css', 'build:vendor']);
 
 // Default gulp task
 gulp.task('default', ['server', 'watch', 'build']);
