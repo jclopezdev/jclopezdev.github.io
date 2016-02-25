@@ -1,9 +1,11 @@
 a {
     text-decoration: none;
 }
+
 html, body {
     height: 100%
 }
+
 body {
     font-family: 'Open Sans', sans-serif;    
     font-size: 16px;
@@ -11,24 +13,24 @@ body {
     background-color: #fff;
     color: #333;
 }
-.section{
-    background-color: #fff;
-    margin: 0 auto;
-    padding: 75px 0;
-    position: relative;
-}
 
-.section h3{
-    font-size: 1.5em;
-    color: #222;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-}
-.section h4{
-    font-size: 1em;
-    color: #222;
-    text-transform: uppercase;
-    letter-spacing: .1em;
+section{
+
+    h3{
+        color: #222;        
+        font-size: 1.5em;
+        letter-spacing: .1em;
+        margin: 1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h4{
+        font-size: 1em;
+        color: #222;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
 }
 
 .info {
@@ -56,34 +58,21 @@ body {
     letter-spacing: .1em;
     line-height: 1em;
 }
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    font-size: 0;
-    clear: both;
-    visibility: hidden;
-}
-.clearfix {
-    display: inline-block;
-}
-* html .clearfix {
-    height: 1px;
-}
-.clearfix {
-    display: block;
-}
+
 .block {
     display: block;
 }
-.text-center {
-    text-align: center;
-}
-.text-right {
-    text-align: right;
-}
+
 .centered {
     margin-left: auto;
     margin-right: auto;
     float: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }

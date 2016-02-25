@@ -1,0 +1,42 @@
+.profile-links{
+	width: 98%;	
+	padding: 1%;
+	text-align: center;
+
+	.profile-link{		
+		border-radius: 2em;
+		color: white;
+		display: block;
+		display: inline-block;		
+		margin: 0.5em 1%;
+		padding: 0.5em 1%;
+		text-decoration: none;
+		width: 90%;
+	    
+	    &.twitter{
+	      background: #55ACEE;
+	  	}
+	    
+	    &.linkedin{
+	      background: #1a85bc;
+	  	}
+	    
+	    &.github{
+	      background: #829AA8;
+	  	}
+	    
+	    &:before{
+	      margin-right: .5em;
+	  	}
+	}
+}
+
+@include breakpoint(tablet){
+	.profile-links{		
+		
+		.profile-link{
+			display: inline-block;
+			width: 200px;
+		} 
+	}
+}

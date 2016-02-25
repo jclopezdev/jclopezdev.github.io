@@ -155,6 +155,46 @@ table {
   border-radius: 50%;
 }
 
+.profile-links {
+  width: 98%;
+  padding: 1%;
+  text-align: center;
+}
+
+.profile-links .profile-link {
+  border-radius: 2em;
+  color: white;
+  display: block;
+  display: inline-block;
+  margin: 0.5em 1%;
+  padding: 0.5em 1%;
+  text-decoration: none;
+  width: 90%;
+}
+
+.profile-links .profile-link.twitter {
+  background: #55ACEE;
+}
+
+.profile-links .profile-link.linkedin {
+  background: #1a85bc;
+}
+
+.profile-links .profile-link.github {
+  background: #829AA8;
+}
+
+.profile-links .profile-link:before {
+  margin-right: .5em;
+}
+
+@media (min-width: 768px) {
+  .profile-links .profile-link {
+    display: inline-block;
+    width: 200px;
+  }
+}
+
 .nav {
   -webkit-box-shadow: 2px 2px 10px #000;
   -ms-box-shadow: 2px 2px 10px #000;
@@ -258,21 +298,16 @@ body {
   color: #333;
 }
 
-.section {
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 75px 0;
-  position: relative;
-}
-
-.section h3 {
-  font-size: 1.5em;
+section h3 {
   color: #222;
-  text-transform: uppercase;
+  font-size: 1.5em;
   letter-spacing: .1em;
+  margin: 1em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.section h4 {
+section h4 {
   font-size: 1em;
   color: #222;
   text-transform: uppercase;
@@ -308,29 +343,14 @@ body {
   line-height: 1em;
 }
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  font-size: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-.clearfix {
-  display: inline-block;
-}
-
-* html .clearfix {
-  height: 1px;
-}
-
-.clearfix {
-  display: block;
-}
-
 .block {
   display: block;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
 
 .text-center {
@@ -339,10 +359,4 @@ body {
 
 .text-right {
   text-align: right;
-}
-
-.centered {
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
 }
