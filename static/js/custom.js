@@ -26,4 +26,11 @@ jQuery( document ).ready( function( $ ){
 	
 	// Full background image
 	$( '.backstretch' ).find('.info').backstretch('static/images/backstretch.jpg');
+
+	// Toggle navBar
+	$("#navbar-toggle").on('click', toggleNavBar);
+
+	function toggleNavBar(){		
+		$('#nav').toggleClass('nav--show');
+	}
 });

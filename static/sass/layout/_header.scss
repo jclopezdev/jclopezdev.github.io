@@ -1,0 +1,26 @@
+.header{
+	
+	.header-button{
+		background: white;
+		border-radius: 50%;
+		border: none;
+		font-size: 1em;
+		height: 35px;
+		line-height: 35px;
+		outline: 0;
+		position: fixed;
+		right: 1em;
+		text-align: center;
+		top: .6em;
+		width: 35px;
+		z-index: 3;
+	}
+}
+
+@include breakpoint('tablet'){
+	.header{	
+		.header-button{
+			display: none;
+		}
+	}
+}
