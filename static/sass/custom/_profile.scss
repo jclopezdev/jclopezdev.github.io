@@ -1,7 +1,7 @@
 .profile-links{
-	width: 98%;	
 	padding: 1%;
-	text-align: center;
+	text-align: center;	
+	width: 98%;	
 
 	.profile-link{		
 		border-radius: 2em;
@@ -31,9 +31,12 @@
 	}
 }
 
-@include breakpoint(tablet){
+@include breakpoint(tablet){	
+
 	.profile-links{		
 		
+		max-width: 1200px;
+
 		.profile-link{
 			display: inline-block;
 			width: 200px;

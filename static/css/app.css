@@ -156,9 +156,9 @@ table {
 }
 
 .profile-links {
-  width: 98%;
   padding: 1%;
   text-align: center;
+  width: 98%;
 }
 
 .profile-links .profile-link {
@@ -189,6 +189,9 @@ table {
 }
 
 @media (min-width: 768px) {
+  .profile-links {
+    max-width: 1200px;
+  }
   .profile-links .profile-link {
     display: inline-block;
     width: 200px;
@@ -312,6 +315,13 @@ section h4 {
   color: #222;
   text-transform: uppercase;
   letter-spacing: .1em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
 }
 
 .info {
