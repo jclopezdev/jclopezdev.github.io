@@ -1,0 +1,26 @@
+.work{
+  margin-top: 2em;
+  text-align: center;
+
+  &-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .work-item{
+    display: inline-block;
+    margin-bottom: 1.8em;
+  }
+
+  .work-imageContainer{
+    margin: 0;
+  }
+
+  .work-description{
+    font-size: 1.1em;
+    color: #515151;
+    font-style: italic;
+  }
+  
+}
