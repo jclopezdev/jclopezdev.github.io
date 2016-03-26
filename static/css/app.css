@@ -122,6 +122,81 @@ table {
   border-spacing: 0;
 }
 
+.contact-title {
+  border-bottom: 2px dashed #008ff4;
+  padding-bottom: 0.5em;
+}
+
+.contact .contact-description {
+  margin: 2em auto;
+}
+
+.contact .contact-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  vertical-align: top;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact .contact-options .contact-button {
+  -webkit-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  display: block;
+  font-size: 1.5em;
+  height: 30px;
+  margin-bottom: 1em;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.contact .contact-options .contact-button:hover {
+  background-color: #ff7700;
+  color: white;
+}
+
+.contact .contact-options .contact-social-networks {
+  display: inline-block;
+  padding: 1em;
+  width: 100%;
+}
+
+.contact .contact-options .contact-social-networks a {
+  font-size: 2.5em;
+  margin: 0.7em;
+}
+
+.contact .contact-options .contact-social-networks .twitter {
+  color: #55ACEE;
+}
+
+.contact .contact-options .contact-social-networks .linkedin {
+  color: #1a85bc;
+}
+
+.contact .contact-options .contact-social-networks .github {
+  color: #829AA8;
+}
+
+@media (min-width: 768px) {
+  .contact .contact-options .contact-button {
+    display: inline-block;
+    width: 20%;
+  }
+  .contact .contact-options .contact-social-networks {
+    width: 50%;
+  }
+}
+
 #home {
   width: 100%;
   height: 100%;
@@ -201,6 +276,11 @@ table {
 .work {
   margin-top: 2em;
   text-align: center;
+}
+
+.work-title {
+  border-bottom: 2px dashed #008ff4;
+  padding-bottom: 0.5em;
 }
 
 .work-container {
