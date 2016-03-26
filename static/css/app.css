@@ -153,10 +153,10 @@ table {
   font-size: 1.5em;
   height: 30px;
   margin-bottom: 1em;
-  padding: 15px 32px;
+  padding: 15px 1%;
   text-align: center;
   text-decoration: none;
-  width: 100%;
+  width: 98%;
 }
 
 .contact .contact-options .contact-button:hover {
@@ -166,12 +166,11 @@ table {
 
 .contact .contact-options .contact-social-networks {
   display: inline-block;
-  padding: 1em;
   width: 100%;
 }
 
 .contact .contact-options .contact-social-networks a {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0.7em;
 }
 
