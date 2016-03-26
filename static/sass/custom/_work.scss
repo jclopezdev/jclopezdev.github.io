@@ -10,7 +10,7 @@
 
   .work-item{
     display: inline-block;
-    margin-bottom: 1.8em;
+    margin: 2em 1em 0 1em;
   }
 
   .work-imageContainer{
@@ -18,9 +18,11 @@
   }
 
   .work-description{
-    font-size: 1.1em;
     color: #515151;
+    font-size: 1.1em;
     font-style: italic;
+    margin: 0.5em 0;
+    text-align: left;
   }
   
 }
