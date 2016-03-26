@@ -1,0 +1,33 @@
+.work{
+  margin-top: 2em;
+  text-align: center;
+
+  &-title{        
+    border-bottom: 2px dashed $blue;
+    padding-bottom: 0.5em;
+  }
+
+  &-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .work-item{
+    display: inline-block;
+    margin: 2em 1em 0 1em;
+  }
+
+  .work-imageContainer{
+    margin: 0;
+  }
+
+  .work-description{
+    color: #515151;
+    font-size: 1.1em;
+    font-style: italic;
+    margin: 0.5em 0;
+    text-align: left;
+  }
+  
+}

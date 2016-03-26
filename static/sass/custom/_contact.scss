@@ -1,0 +1,81 @@
+.contact{
+
+	&-title{		
+		border-bottom: 2px dashed $blue;
+	    padding-bottom: 0.5em;
+	}
+
+	.contact-description{
+		margin: 2em auto;
+	}
+
+	.contact-options{
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	    vertical-align: top;
+	    margin: 0 auto;
+	    text-align: center;
+
+		.contact-button{
+			@include prefixes(transition-duration, 0.4s);
+			background-color: #ff9900;
+			border: none;
+			color: white;
+			display: block;
+			font-size: 1.5em;
+			height: 30px;
+			margin-bottom: 1em;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			width: 100%;
+
+			&:hover{
+	    		background-color: #ff7700;
+	    		color: white;
+			}
+		}
+
+		.contact-social-networks{
+			display: inline-block;			
+			padding: 1em;
+			width: 100%;
+
+			a{
+				font-size: 2.5em;
+				margin: 0.7em;			
+			}
+
+			.twitter{
+		      color: #55ACEE;
+		  	}
+		    
+		    .linkedin{
+		      color: #1a85bc;
+		  	}
+		    
+		    .github{
+		      color: #829AA8;
+		  	}		    
+		}
+	}
+
+	@include breakpoint(tablet){
+	
+		.contact-options{
+			
+			.contact-button{
+				display: inline-block;
+				width: 20%;
+			}
+
+			.contact-social-networks{
+				width: 50%;
+			}
+
+		}
+
+	}
+
+}

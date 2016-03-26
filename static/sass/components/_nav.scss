@@ -1,0 +1,66 @@
+.nav{
+    @include prefixes(box-shadow, 2px 2px 10px #000);
+    background: rgba(0,0,0, 0.5);    
+    position: fixed;
+    text-transform: uppercase;
+    top: 0;
+    width: 80vw;
+    left: -82vw;
+    transition: all 0.3s ease;
+
+    ul li{
+        margin: 1.2em;
+    }
+}
+
+.nav--show{    
+    left: 0;
+}
+
+
+@include breakpoint('tablet'){
+
+    #nav-sticky-wrapper.is-sticky{
+      
+      #nav {
+        background-color: #121212;
+      }
+
+    }
+
+    .nav {
+        @include prefixes(box-shadow, none);
+        background: none;    
+        display: block;
+        height: 60px;
+        left: 0;
+        top: auto;
+        margin: 0 auto;        
+        position: absolute;
+        text-align: center;
+        width: 100%;
+
+        ul{
+            padding: 0;
+            list-style: none;
+            display: inline-block;    
+
+            li{
+                display: inline-block;
+                float: left;
+                line-height: 60px;
+                margin: 0 1em;
+                padding: 0 8px;
+                text-transform: uppercase;
+
+                 a {
+                    color: #fff;
+                    display: block;
+                    font-size: .938em;
+                    letter-spacing: .1em;
+                    text-decoration: none;
+                }
+            }
+        }
+    }   
+}

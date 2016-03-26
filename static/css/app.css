@@ -1,0 +1,480 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?ie4orr");
+  src: url("../fonts/icomoon.eot?ie4orr#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ie4orr") format("truetype"), url("../fonts/icomoon.woff?ie4orr") format("woff"), url("../fonts/icomoon.svg?ie4orr#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+  content: "\e900";
+}
+
+.icon-menu:before {
+  content: "\e901";
+}
+
+.icon-plus:before {
+  content: "\e902";
+}
+
+.icon-minus:before {
+  content: "\e903";
+}
+
+.icon-cross:before {
+  content: "\e904";
+}
+
+.icon-checkmark:before {
+  content: "\e905";
+}
+
+.icon-facebook:before {
+  content: "\e906";
+}
+
+.icon-twitter:before {
+  content: "\e907";
+}
+
+.icon-youtube:before {
+  content: "\e908";
+}
+
+.icon-github:before {
+  content: "\e909";
+}
+
+.icon-skype:before {
+  content: "\e90a";
+}
+
+.icon-linkedin:before {
+  content: "\e90b";
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  overflow: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.contact-title {
+  border-bottom: 2px dashed #008ff4;
+  padding-bottom: 0.5em;
+}
+
+.contact .contact-description {
+  margin: 2em auto;
+}
+
+.contact .contact-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  vertical-align: top;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact .contact-options .contact-button {
+  -webkit-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  display: block;
+  font-size: 1.5em;
+  height: 30px;
+  margin-bottom: 1em;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.contact .contact-options .contact-button:hover {
+  background-color: #ff7700;
+  color: white;
+}
+
+.contact .contact-options .contact-social-networks {
+  display: inline-block;
+  padding: 1em;
+  width: 100%;
+}
+
+.contact .contact-options .contact-social-networks a {
+  font-size: 2.5em;
+  margin: 0.7em;
+}
+
+.contact .contact-options .contact-social-networks .twitter {
+  color: #55ACEE;
+}
+
+.contact .contact-options .contact-social-networks .linkedin {
+  color: #1a85bc;
+}
+
+.contact .contact-options .contact-social-networks .github {
+  color: #829AA8;
+}
+
+@media (min-width: 768px) {
+  .contact .contact-options .contact-button {
+    display: inline-block;
+    width: 20%;
+  }
+  .contact .contact-options .contact-social-networks {
+    width: 50%;
+  }
+}
+
+#home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  color: #fff;
+}
+
+#home a {
+  color: white;
+}
+
+#home .info .container .home-name {
+  -webkit-text-shadow: 1px 1px 2px #000;
+  -ms-text-shadow: 1px 1px 2px #000;
+  -moz-text-shadow: 1px 1px 2px #000;
+  -o-text-shadow: 1px 1px 2px #000;
+  text-shadow: 1px 1px 2px #000;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin: 0.2em auto;
+  text-decoration: none;
+}
+
+#home .info .container .home-twitter {
+  font-size: 1.5em;
+}
+
+#home .info .container .logo {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.profile-links {
+  padding: 1%;
+  text-align: center;
+  width: 98%;
+}
+
+.profile-links .profile-link {
+  border-radius: 2em;
+  color: white;
+  display: block;
+  display: inline-block;
+  margin: 0.5em 1%;
+  padding: 0.5em 1%;
+  text-decoration: none;
+  width: 90%;
+}
+
+.profile-links .profile-link.twitter {
+  background: #55ACEE;
+}
+
+.profile-links .profile-link.linkedin {
+  background: #1a85bc;
+}
+
+.profile-links .profile-link.github {
+  background: #829AA8;
+}
+
+.profile-links .profile-link:before {
+  margin-right: .5em;
+}
+
+@media (min-width: 768px) {
+  .profile-links {
+    max-width: 1200px;
+  }
+  .profile-links .profile-link {
+    display: inline-block;
+    width: 200px;
+  }
+}
+
+.work {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.work-title {
+  border-bottom: 2px dashed #008ff4;
+  padding-bottom: 0.5em;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work .work-item {
+  display: inline-block;
+  margin: 2em 1em 0 1em;
+}
+
+.work .work-imageContainer {
+  margin: 0;
+}
+
+.work .work-description {
+  color: #515151;
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 0.5em 0;
+  text-align: left;
+}
+
+.nav {
+  -webkit-box-shadow: 2px 2px 10px #000;
+  -ms-box-shadow: 2px 2px 10px #000;
+  -moz-box-shadow: 2px 2px 10px #000;
+  -o-box-shadow: 2px 2px 10px #000;
+  box-shadow: 2px 2px 10px #000;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  width: 80vw;
+  left: -82vw;
+  transition: all 0.3s ease;
+}
+
+.nav ul li {
+  margin: 1.2em;
+}
+
+.nav--show {
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  #nav-sticky-wrapper.is-sticky #nav {
+    background-color: #121212;
+  }
+  .nav {
+    -webkit-box-shadow: none;
+    -ms-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    display: block;
+    height: 60px;
+    left: 0;
+    top: auto;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  .nav ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+  }
+  .nav ul li {
+    display: inline-block;
+    float: left;
+    line-height: 60px;
+    margin: 0 1em;
+    padding: 0 8px;
+    text-transform: uppercase;
+  }
+  .nav ul li a {
+    color: #fff;
+    display: block;
+    font-size: .938em;
+    letter-spacing: .1em;
+    text-decoration: none;
+  }
+}
+
+.header .header-button {
+  background: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 1em;
+  height: 35px;
+  line-height: 35px;
+  outline: 0;
+  position: fixed;
+  right: 1em;
+  text-align: center;
+  top: .6em;
+  width: 35px;
+  z-index: 3;
+}
+
+@media (min-width: 768px) {
+  .header .header-button {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #333;
+}
+
+section h3 {
+  color: #222;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  margin: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section h4 {
+  font-size: 1em;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -60px;
+  text-align: center;
+}
+
+.info .container {
+  position: relative;
+  top: 200px;
+}
+
+.info .container h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.75em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.info .container h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.875em;
+  font-weight: 300;
+  letter-spacing: .1em;
+  line-height: 1em;
+}
+
+.block {
+  display: block;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
