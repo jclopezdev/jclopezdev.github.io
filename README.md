@@ -1,5 +1,4 @@
-# jcarloslopezl.github.io
-Portfolio
+# Portfolio jcarloslopezl.github.io
 
 <!-- icons with padding -->
 
@@ -13,4 +12,4 @@ Portfolio
 [![alt text][1.1]][1] Follow Me
 
 ## Linkedin:
-https://mx.linkedin.com/in/jclopezl/
+https://mx.linkedin.com/in/jclopezdev
