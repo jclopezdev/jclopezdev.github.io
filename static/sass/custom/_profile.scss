@@ -1,45 +1,53 @@
+.profile-description {
+  p {
+    padding-bottom: 15px;
+  }
+}
+
 .profile-links{
 	padding: 1%;
-	text-align: center;	
-	width: 98%;	
+	text-align: center;
+	width: 98%;
 
-	.profile-link{		
+	.profile-link{
 		border-radius: 2em;
 		color: white;
 		display: block;
-		display: inline-block;		
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 		margin: 0.5em 1%;
 		padding: 0.5em 1%;
 		text-decoration: none;
 		width: 90%;
-	    
+
 	    &.twitter{
 	      background: #55ACEE;
 	  	}
-	    
+
 	    &.linkedin{
 	      background: #1a85bc;
 	  	}
-	    
+
 	    &.github{
 	      background: #829AA8;
 	  	}
-	    
+
 	    &:before{
 	      margin-right: .5em;
 	  	}
 	}
 }
 
-@include breakpoint(tablet){	
+@include breakpoint(tablet){
 
-	.profile-links{		
-		
+	.profile-links{
+
 		max-width: 1200px;
 
 		.profile-link{
 			display: inline-block;
 			width: 200px;
-		} 
+		}
 	}
 }
