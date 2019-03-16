@@ -229,6 +229,10 @@ table {
   border-radius: 50%;
 }
 
+.profile-description p {
+  padding-bottom: 15px;
+}
+
 .profile-links {
   padding: 1%;
   text-align: center;
@@ -240,6 +244,8 @@ table {
   color: white;
   display: block;
   display: inline-block;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   margin: 0.5em 1%;
   padding: 0.5em 1%;
   text-decoration: none;
@@ -401,7 +407,7 @@ html, body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   margin: 0 auto;
   background-color: #fff;
